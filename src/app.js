@@ -1,14 +1,13 @@
-import React from 'react';
+import styled from 'styled-components';
+
+const Div = styled.div`
+	text-align: center;
+`;
 
 export const App = () => {
 	return (
-		<div>
-			<div>
-				<h1>Заголовок приложения</h1>
-				<div>
-					{/* Добавьте ваш контент здесь */}
-				</div>
-			</div>
-		</div>
+		<Div>
+			<div>123</div>
+		</Div>
 	);
 };
