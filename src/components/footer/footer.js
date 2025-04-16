@@ -7,11 +7,11 @@ const FooterContainer = ({ className }) => {
    const [weather, setWeather] = useState('');
 
    useEffect(() => {
-      fetch('https://api.openweathermap.org/data/2.5/weather?q=Almaty&units=metric&lang=ru&appid=9142d1077a61a9417cfd3f5a9aae4a4a')
+      fetch('https://api.openweathermap.org/data/2.5/weather?q=Almaty&units=metric&lang=ru&appid=c4e72a731ae8b3ba788ee047db959e19')
          .then((res) => res.json())
          .then(({ name, main, weather }) => {
             setCity(name);
-            setTemperature(Math.round(main.temperature));
+            setTemperature(Math.round(main.temp));
             setWeather(weather[0].description);
          })
    }, [])
